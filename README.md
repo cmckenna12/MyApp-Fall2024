@@ -21,6 +21,9 @@ install packages
 pip install -r requirements.txt
 ```
 
+TODO include SENDGRID instructions. Obtain API key and set key and sender address as env variables
+
+
 Obtain API Key from ALPHAVANTAGE
 
 Create a new ".env" file and add contents like the following to create your own ALPHAVANTAGEAPIKEY
@@ -44,4 +47,10 @@ Run the stocks report:
 
 ```sh
 python app/stockreport.py
+```
+
+Run the example email send file:
+
+```sh
+python app/emailservice.py
 ```
