@@ -5,15 +5,37 @@ Version Control exercise from Python Bus App Development
 
 ## Setup
 
-Todo: create and activate a virtual environment
+Create and activate a virtual environment (first time only)
 
-Todo: install packages
+```sh
+conda create -n reports-env-2024 python=3.11
+```
+
+Activate Virtual environment (anytime you open)
+```sh
+conda activate reports-env-2024
+```
+
+install packages
+```sh
+pip install -r requirements.txt
+```
+
+Obtain API Key from ALPHAVANTAGE
+
+Create a new ".env" file and add contents like the following to create your own ALPHAVANTAGEAPIKEY
+
+
+```sh
+# this is the ".env" file:
+ALPHAVANTAGE_API_KEY="..."
+```
 
 
 ## Usage
 
-Run the example script:
+Run the unemployment Report:
 
 ```sh
-python app/my_script.py
+python app/unemployment.py
 ```
