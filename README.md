@@ -54,3 +54,12 @@ Run the example email send file:
 ```sh
 python app/emailservice.py
 ```
+
+
+## Testing
+
+Run tests:
+
+```sh
+pytest
+```
