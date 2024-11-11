@@ -1,14 +1,13 @@
 import os
 from dotenv import load_dotenv
 
+from sendgrid import SendGridAPIClient
+from sendgrid.helpers.mail import Mail
+
 load_dotenv() #looks in ".env" file for environment variables
 
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 SENDGRID_SENDER_ADDRESS= os.getenv("SENDGRID_SENDER_ADDRESS")
-
-
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
 
 
 def send_email_with_sendgrid(recipient_address=SENDGRID_SENDER_ADDRESS,
